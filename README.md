@@ -5,20 +5,20 @@ Modern Data Structures
 QMSS G5072 - Columbia University
 --------------------------------
 
-**Fall 2017**
-**Lecture: Wednesdays 6.10 - 8pm (but see weekly schedule)**
+**Fall 2017**  
+**Lecture: Wednesdays 6.10 - 8pm (but see weekly schedule)**  
 **Location: 207 Union Theological Seminary**
 
-Instructor: Thomas Brambor
-[tb2729@columbia.edu](tb2729@columbia.edu)
-IAB 509E Thurs 11-12pm
+Instructor: Thomas Brambor  
+[tb2729@columbia.edu](tb2729@columbia.edu)  
+IAB 509E Thurs 11-12pm  
 
-TA1: Shriya Balaji Palsamudram
-[sbp2148@columbia.edu](sbp2148@columbia.edu)
+TA1: Shriya Balaji Palsamudram  
+[sbp2148@columbia.edu](sbp2148@columbia.edu)  
 IAB 270 Time TBA
 
-TA1: Sahil Manocha
-[sahil.manocha@columbia.edu](sahil.manocha@columbia.edu)
+TA1: Sahil Manocha  
+[sahil.manocha@columbia.edu](sahil.manocha@columbia.edu)  
 IAB 270 Time TBA
 
 ------------------------------------------------------------------------
@@ -174,8 +174,9 @@ Lecture Topics
 #### Week 2: (Sep 13) Github
 
 -   **On your own:**
-    -   Sign up for a GitHub account.
-    -   Install GitHub Desktop (if you are confidenct in using command-line Git or have a different software preference, feel free to skip this step.)
+    - Sign up for a GitHub account.
+    - Install GitHub Desktop (if you are confident in using command-line Git or have a different software preference, feel free to skip this step.)
+    - Claim your private repository connected with this class.
 -   **Reading**:
     -   [Hello World - GitHub for the non-programming beginner.](https://guides.github.com/activities/hello-world/)
     -   [An Intro to Git and GitHub for Beginners (Tutorial)](http://product.hubspot.com/blog/git-and-github-tutorial-for-beginners), by Meghan Nelson.
@@ -190,6 +191,7 @@ Lecture Topics
 
 -   **Reading**:
     -   [Functions in *Advanced R*](http://adv-r.had.co.nz/Functions.html) by Hadley Wickham
+    - Some basics of code styling. [Style Guide in _R packages_](http://r-pkgs.had.co.nz/style.html), by Hadley Wickham
 
 #### Week 5: (Oct 4) Functions II: nested operations and complex sets of commands
 

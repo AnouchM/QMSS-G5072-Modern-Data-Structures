@@ -31,7 +31,7 @@ Quick Links
 -   [Requirements and Assessments](#requirements-and-assessments)
 -   [Policies](#policies)
 -   [Lecture Topics](#lecture-topics)
-    -   [Part 1: Data Manipulation](#part-1---data-manipulation)
+    -   [Part 1 - Data Manipulation](#part-1---data-manipulation)
     -   [Part 2 - Getting Data in](#part-2---getting-data-in)
     -   [Part 3 - Other “Big Data” Considerations](#part-3---other-big-data-considerations)
 
@@ -206,7 +206,7 @@ Lecture Topics
     -   [Handling and Processing Strings in R](http://gastonsanchez.com/Handling_and_Processing_Strings_in_R.pdf), by Gaston Sanchez
     -   [Strings in *R for Data Science*](http://r4ds.had.co.nz/strings.html), by Hadley Wickham
 
-### Part 2: Getting Data In
+### Part 2 - Getting Data In
 
 #### Week 7: (Oct 18) APIs
 
@@ -232,7 +232,7 @@ Lecture Topics
 -   **Reading**:
     -   practicing using [SQLZOO](http://sqlzoo.net/)
 
-### Part 3: Other “Big Data” Considerations
+### Part 3 - Other “Big Data” Considerations
 
 #### Week 11: (Nov 15) Big data considerations vis-a-vis algorithms
 

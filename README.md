@@ -214,7 +214,7 @@ Lecture Topics
     -   [Using Data.gov APIs in R](http://data.library.virginia.edu/using-data-gov-apis-in-r/), University of Virginia Library
     -   [Scraping via APIs](http://bradleyboehmke.github.io/2016/01/scraping-via-apis.html), by Bradley Boehmke
 
-#### Week 8: (Oct 25) Handling JSON and XML
+#### Week 8: (Oct 25) Handling JSON
 
 -   **Reading**:
     -   [Using R to download and parse JSON: an example using data from an open data portal](http://zevross.com/blog/2015/02/12/using-r-to-download-and-parse-json-an-example-using-data-from-an-open-data-portal/), by Zev Ross

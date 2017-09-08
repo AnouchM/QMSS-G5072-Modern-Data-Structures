@@ -15,11 +15,11 @@ IAB 509E Thurs 11-12pm
 
 TA1: Shriya Balaji Palsamudram  
 [sbp2148@columbia.edu](sbp2148@columbia.edu)  
-IAB 270 Time TBA
+IAB 270 Mon 2-4pm
 
 TA1: Sahil Manocha  
 [sahil.manocha@columbia.edu](sahil.manocha@columbia.edu)  
-IAB 270 Time TBA
+IAB 270 Fri 2-4pm
 
 ------------------------------------------------------------------------
 

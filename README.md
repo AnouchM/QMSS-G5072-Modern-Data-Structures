@@ -171,7 +171,7 @@ Lecture Topics
 
 ### Part 1 - Data Manipulation
 
-#### Week 2: (Sep 13) Github
+#### [Week 2: (Sep 13) Github](Week02/week02_lecture.md)
 
 -   **On your own:**
     - Sign up for a GitHub account.

@@ -17,7 +17,7 @@ TA1: Shriya Balaji Palsamudram
 [sbp2148@columbia.edu](sbp2148@columbia.edu)  
 IAB 270 Mon 2-4pm
 
-TA1: Sahil Manocha  
+TA2: Sahil Manocha  
 [sahil.manocha@columbia.edu](sahil.manocha@columbia.edu)  
 IAB 270 Fri 2-4pm
 
@@ -180,6 +180,13 @@ Lecture Topics
 -   **Reading**:
     -   [Hello World - GitHub for the non-programming beginner.](https://guides.github.com/activities/hello-world/)
     -   [An Intro to Git and GitHub for Beginners (Tutorial)](http://product.hubspot.com/blog/git-and-github-tutorial-for-beginners), by Meghan Nelson.
+- **Advanced Topics (optional, on your own only)**:
+    - _Combining Shiny & RMarkdown_ ([Overview here](https://beta.rstudioconnect.com/content/2671/Combining-Shiny-R-Markdown.html)):
+        - RMarkdown also allows interactive applications with Shiny. Follow the [introduction on the RStudio website](http://rmarkdown.rstudio.com/authoring_shiny.html) to create an interactive document. Shiny apps can be [embedded in a document](http://rmarkdown.rstudio.com/authoring_embedded_shiny.html) or called from an externally saved shiny application. 
+        - In Shiny applications themselves, you can [allow users to generate a report](https://shiny.rstudio.com/articles/generating-reports.html) (based on markdown). 
+    - RMarkdown can be used directly from the command line or from within R. You can [render `.R` scripts into reports](http://rmarkdown.rstudio.com/articles_report_from_r_script.html).
+    - _Report Automation_: The creation of report (as well as uploading/emailing) can be [automated completely](http://www.analyticsforfun.com/2016/01/scheduling-r-markdown-reports-via-email.html).  
+        
 
 #### Week 3: (Sep 20) Basics of the tidyverse
 
@@ -242,9 +249,15 @@ Lecture Topics
     -   [Basic Introduction into Algorithms and Data Structures](https://www.uni-oldenburg.de/fileadmin/user_upload/physik/ag/compphys/download/Alexander/dpg_school/LN_liers.pdf), by Frauke Liers
     -   \[Introduction to Pseudocode\] by Carnegie Mellon’s Robotics Academy
 
-#### Week 12: (Nov 23) Amazon Web Services and parallelization
+#### Week 12: (Nov 22) Amazon Web Services and parallelization
 
 -   **Reading**:
     -   [A comprehensive beginner’s guide to start ML with Amazon Web Services (AWS)](https://www.analyticsvidhya.com/blog/2016/05/comprehensive-guide-ml-amazon-web-services-aws/) by Aarshay Jain
     -   [Analyzing Your Data on the AWS Cloud (with R)](https://www.r-statistics.com/2013/07/analyzing-your-data-on-the-aws-cloud-with-r/), by Tal Galili
     -   [Five ways to handle Big Data in R](https://www.r-bloggers.com/five-ways-to-handle-big-data-in-r/), by Oliver Bracht
+    
+#### Week 13: (Nov 29) Other Topics TBA
+
+#### Week 14: (Dec 6) Other Topics TBA
+
+

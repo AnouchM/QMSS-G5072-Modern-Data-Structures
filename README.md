@@ -259,8 +259,3 @@ Lecture Topics
 #### Week 13: (Nov 29) Other Topics TBA
 
 #### Week 14: (Dec 6) Other Topics TBA
-
-Toast
-=======
-Test
->>>>>>> f74e9bb18a3ce2bb7aac08ec87ba9b05406b8dcf

@@ -165,13 +165,13 @@ Lecture slides will be made available on the course website. However, I believe 
 Lecture Topics
 --------------
 
-#### [Week 1: (Sep 6) Introduction](Week01/week01_lecture.md)
+#### [Week 1: (Sep 6) Introduction](Lectures/Week01/week01_lecture.md)
 
 -   **On your own:** Install R and R Studio on your own computer. Try out R Markdown (use the [tutorial](http://rmarkdown.rstudio.com/) to get familiar).
 
 ### Part 1 - Data Manipulation
 
-#### [Week 2: (Sep 13) Github](Week02/week02_lecture.md)
+#### [Week 2: (Sep 13) Github](Lectures/Week02/week02_lecture.md)
 
 -   **On your own:**
     - Sign up for a GitHub account.

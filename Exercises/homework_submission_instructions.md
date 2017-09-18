@@ -1,0 +1,68 @@
+QMSS G5072 Homework Submission Instructions
+================
+Thomas Brambor
+2017-09-14
+
+GitHub set-up
+-------------
+
+-   Register an [educational GitHub account](https://education.github.com); it has the added perk of giving you some free private repositories for a couple of years. You probably want a *student, individual* account.
+-   *Optional*: Upload your photo to [Gravatar](http://gravatar.com) or directly to your GitHub profile, if you're comfortable with that. This photo will appear in your GitHub profile, be associated with your commits and comments, etc.
+-   Create a **private** GitHub repository named `Lastname_Firstname` (exactly!) for assignments in the organization [QMSS-G5072-2017](https://github.com/QMSS-G5072-2017). You will need to be a member of the organization first. I added all students who submitted their GitHub information. If you are not a member yet, please submit your GitHub username [here](bit.ly/github-username) so I can add you. You need to be a member to create a repository in the organization and submit your homework.
+-   Add the prof and TAs as administrators to your **private** GitHub repository
+    -   [Thomas Brambor -- tbrambor](https://github.com/tbrambor) on GitHub
+    -   [Sahil Manocha -- altairmn](https://github.com/altairmn) on GitHub
+    -   [Shriya Palsamudram -- shriyapb](https://github.com/shriyapb) on GitHub
+
+Set-up your private GitHub repo for homework
+--------------------------------------------
+
+-   We're talking about the repo `Lastname_Firstname` now.
+-   Make a top-level directory for each assignment, e.g. `hw01` and `hw02` and so on.
+    -   We truly mean a [directory or "folder"](http://en.wikipedia.org/wiki/Directory_(computing)) -- NOT a [Git branch](http://git-scm.com/book/en/Git-Branching) or anything fancy like that! On your local computer, go to the directory where this Git repository lives. Make the 2 directories here. FYI, since Git tracks *files*, you might not see evidence of the `hw02` directory on, e.g. GitHub, until there are some files in it.
+-   Make a top-level `README.md` that includes, at the very least, something like "This is Michael Jackson's private repository for QMSS G5072 (2017). Feel free to include links to your homeworks or things that you think are relevant later on."
+    -   GitHub automatically renders all Markdown files into (pseudo-)HTML when you visit them in a browser. Whenever a *directory* in a repo is visited, if it contains a Markdown file called `README.md`, it will automatically be rendered, effectively serving as a landing or home page.
+-   It is also nice to include a `README.md` inside each of the assignment directories, for all the same reasons. See below.
+
+R Markdown
+----------
+
+-   Write your homework in R Markdown. The file extension should be `.rmd`. I recommend using the notebook format.
+-   Note: Feel free to create a skeleton of your report by starting with the Markdown file that creates the assignment itself! You can take some things away (unnecessary detail) and add others (R chunks) to morph this into your homework solution.
+    -   You'll have these files if you are using Git(Hub) to keep a current copy of the whole course repository. Or, from the links above, click on "Raw" to get raw Markdown and save to a local file.
+
+HTML
+----
+
+-   Compile your homework to Markdown (file extension should be `.md`) and to HTML (file extension should be `.html`). That is you will need to specify two output formats: `github_document` and `html_notebook`.
+    -   RStudio's "Knit" button will do this and create both output formats you specified.
+-   Notice that, by default, any figures created are placed into a `figures/` subdirectory. The intermediate Markdown file links to these and, therefore, requires them to present your full report. By default, the figures are encoded and *embedded* into the HTML, which, therefore, is self-contained.
+
+What to put (or not put) into your Git(Hub) repository
+------------------------------------------------------
+
+> This is rather specific to QMSS G5072 and may not necessarily reflect your workflow in the future and in other contexts.
+
+-   Commit the main R markdown (`.rmd`) file that constitutes your solution. Commit early, commit often!
+-   If the homework provides a common data set for all students to use, do not commit the input data to your repository.
+    -   Locally, you are of course encouraged to keep the file in some logical place within the homework assignment's directory. But list the names of such data files in your top-level [`.gitignore` file](http://git-scm.com/docs/gitignore), so that Git ignores it. We do this so that TAs don't end up with 50 copies of the same input data when they mark your work. You can also add a file to the `.gitignore` file by using the GitHub Desktop app, right-clicking on the file in question and choosing ignore. It will then *not* be tracked by git and *not* be uploaded to your remote GitHub repository.
+-   Commit the intermediate Markdown (`.md`) file and the figures stored in the `figures/` subdirectory.
+    -   Some purists would say intermediate and downstream products do NOT belong in the repo. After all, you can always recreate them from source, right? But here in reality, it turns out to be incredibly handy to have this in the repo.
+-   Commit the end product HTML (`.html`) file.
+    -   See above comment re: version control purists vs. pragmatists.
+-   You may not want to commit the Markdown and HTML until the work is fairly advanced, maybe even until submission. Once these enter the repo, you really should recompile them each time you commit changes to the R Markdown source, so that the Git history reflects the way these files should evolve as an ensemble.
+-   **Never ever** edit the Markdown or HTML "by hand". Only edit the R Markdown source and then regenerate the downstream products from that.
+
+How to "turn in" your homework
+------------------------------
+
+-   Make sure you have committed all the files associated with your solution in your local Git repository.
+-   Make sure you have pushed the current state of your local repo to GitHub.
+-   Open your private GitHub repository in a web browser
+-   On the web page just above the files, look for the text "latest commit" followed by a link of seven numbers and letters (called the short hash or revision SHA).
+-   Copy this short hash (or the long 40 character full hash linked to) to your clipboard.
+-   Create an issue in your private repository. Click on "Issues", then on "New Issue". Name the issue "Final submission homework x of *firstname* *lastname*", where *x* is, e.g. 1 or 2.
+-   In the description of the issue, tag both TAs by including text like `@altairmn and @shriyapb`, and paste the revision SHA.
+-   Click "Submit new issue". You're done! Congratulations!
+
+> If you're concerned that something hasn't gone right with the submission, send Shriya <sbp2148@columbia.edu> and Sahil <sm4389@columbia.edu> an e-mail with your assignment attached. **Note**: this is only an emergency back-up plan. We will pester and work with you until you eventually get it submitted via GitHub.

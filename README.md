@@ -186,7 +186,12 @@ Lecture Topics
         - In Shiny applications themselves, you can [allow users to generate a report](https://shiny.rstudio.com/articles/generating-reports.html) (based on markdown). 
     - RMarkdown can be used directly from the command line or from within R. You can [render `.R` scripts into reports](http://rmarkdown.rstudio.com/articles_report_from_r_script.html).
     - _Report Automation_: The creation of report (as well as uploading/emailing) can be [automated completely](http://www.analyticsforfun.com/2016/01/scheduling-r-markdown-reports-via-email.html).  
+    - _Git_: 
+        - The in-class introduction to Git was centered around GitHub. To learn a bit more, get comfortable with [command line git](http://rogerdudler.github.io/git-guide/) usage. 
+        - Also, make sure you understand how branches work and how to work with a group of people.
+        - Submit something to a public repository on Github using a pull request.
         
+> **Homework 1**: [Using RMarkdown and Github](Exercises/hw01/hw01.md). Also see the [homework submission instructions](Exercises/homework_submission_instructions.md).
 
 #### Week 3: (Sep 20) Basics of the tidyverse
 

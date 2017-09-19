@@ -85,4 +85,4 @@ axis(side=1, at=c(0:2))
 
 ### 6. Add a picture
 
-![Quite an emphatic bird](/Users/Anouch/Downloads/220px-Twitter_bird_logo_2012.svg.png "Quite an emphatic bird")
+![Quite an emphatic bird](QMSS-G5072-Modern-Data-Structures/Exercises/hw01/images/220px-Twitter_bird_logo_2012.svg.png/220px-Twitter_bird_logo_2012.svg.png "Quite an emphatic bird")

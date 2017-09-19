@@ -1,0 +1,88 @@
+---
+title: "QMSS G5072 Homework 1"
+author: "Anouch Missirian"
+date: '2017-09-14'
+output:
+  github_document: default
+  html_document: default
+  html_notebook: default
+always_allow_html: yes
+---
+
+Using Github and RMarkdown
+============================
+
+This short exercise is meant to make sure that all students have setup their Github account correctly, are able to write a simple RMarkdown document, and can submit their solution to their own private repository on Github.
+
+
+## R Markdown
+
+### 1. Create R Markdown document
+
+From the instructions, you should have created a bare bones RMarkdown file that outputs a `.html` file and a GitHub flavored `.md` document. If you have not, the instructions for this homework itself have the configuration you are looking for. 
+
+Make sure to insert a YAML Header with title, author and date at the top of your .Rmd script.
+
+### 2. Get some data
+
+(Get some data from our friends at [fivethirtyeight.com](www.fivethirtyeight.com).)
+
+I chose the `trump_twitter` dataset. It consists in "The World's Favorite Donald Trump Tweets" (based on the number of retweets?), i.e. 448 tweets posted by the Twitter account @realDonaldTrump between August 1st, 2015 and August 16th, 2016, and that were used in the FiveThirtyEight article ["The World's Favorite Donald Trump Tweets"](https://fivethirtyeight.com/features/the-worlds-favorite-donald-trump-tweets/) (06/21/2016).
+
+(Manually create a small table for your dataframe with two columns: variable name and variable description. Include a few variables in the table.)
+```{r}
+variables <- data.frame(c("id", "created_at", "text"),c("unique identifier", "date created", "contents of the tweet"))
+names(variables) <- c("name", "description")
+variables
+```
+
+
+### 3. Show the data
+
+```{r, echo=FALSE}
+summary(trump_twitter)
+```
+
+
+Using the command `datatable` from the package [`DT`](http://rstudio.github.io/DT/) let's look at an *interactive* table of the data *in* the document: 
+```{r echo=FALSE}
+library(DT)
+datatable(trump_twitter, caption="'trump_twitter': Data overview")
+```
+
+Let's now add another *non-interactive* table using the `kable` function in the `knitr` package, and show the first ten rows of our data:
+
+```{r echo=FALSE}
+library(knitr)
+trump_tweets <- trump_twitter
+trump_tweets$id <- as.factor(trump_twitter$id)
+kable(head(trump_tweets), caption="'trump_tweets' data set: the first 10 rows", col.names=c("tweet id", "time", "tweet contents"))
+```
+
+*Nota:* the "#" in the tweets set the table off (but not always? cf. line 4), and I couldn't find a way to fix it in `kable` without tampering with the data. Thoughts?
+
+### 4. Add some Latex formulas
+
+The FiveThirtyEight article doesn't really suggest the mechanism underlying the tweet generation process (compares usage of Twitter among presidential hopefuls), but [Planet Money](http://www.npr.org/2017/04/13/523709894/using-sentiment-analysis-to-understand-trumps-tweets) relates that those tweets may have effects on company valuation on the stock exchange, i.e.:
+$$ Stock_{it} = f(Valence_{it}) $$ 
+with $i$ the company, $t$ the time (month). $Valence$ is an index ($\in [-1,1]$) resulting from the sentiment analysis of a given tweet. More specifically, the functional form could be of the type: $\Delta Stock_{it} = \beta\times Valence_{it}$, $\beta\in\mathbb{R}$, $\Delta Stock$ the variation in the value of the company between $t=0$ and $t$.
+
+### 5. Add a plot
+
+```{r echo=FALSE}
+library(stringr)
+trump_tweets$exclam <- str_count(trump_tweets$text,"!")
+trump_tweets$great <- str_count(str_to_lower(trump_tweets$text),"great")
+plot(trump_tweets$great, trump_tweets$exclam, main="Occurrences of 'great' vs. '!' in DJ Trump's tweets (Aug 2015 - Aug 2016)", xlab="Number of 'great' in tweet", ylab="Number of '!' in tweet", xaxt = 'n') # not very informative -- would like to add the information in CrossTable(trump_tweets$great, trump_tweets$exclam, prop.r=FALSE, prop.c=FALSE, prop.t=FALSE, prop.chisq=FALSE, chisq=FALSE), e.g. with something like with(trump_tweets, symbols(x=great, y=exclam, circles=exclam, inches=1/3,ann=F, bg="steelblue2", fg=NULL))
+axis(side=1, at=c(0:2))
+plot(trump_tweets$exclam, type="l", col="green", xlab="Tweet id", ylab="Number of occurrences in tweet", main="'!' (green) and 'great' (blue) in DJ Trump's tweets")
+lines(trump_tweets$great, type="l", col="blue")
+smoothScatter(trump_tweets$great, trump_tweets$exclam, main="Occurrences of 'great' vs. '!' in DJ Trump's tweets", xlab="Number of 'great' in tweet", ylab="Number of '!' in tweet", xaxt = 'n')
+axis(side=1, at=c(0:2))
+```
+
+*Nota:* the darker the dot, the more observations (e.g. (0,0): 192 obs., (0,4): 2 obs.).
+
+### 6. Add a picture
+
+![Quite an emphatic bird](/Users/Anouch/Downloads/220px-Twitter_bird_logo_2012.svg.png "Quite an emphatic bird")

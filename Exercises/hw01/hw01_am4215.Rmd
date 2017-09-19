@@ -3,8 +3,8 @@ title: "QMSS G5072 Homework 1"
 author: "Anouch Missirian"
 date: '2017-09-14'
 output:
-  github_document: default
   html_document: default
+  github_document: default
   html_notebook: default
 always_allow_html: yes
 ---
@@ -30,6 +30,10 @@ Make sure to insert a YAML Header with title, author and date at the top of your
 I chose the `trump_twitter` dataset. It consists in "The World's Favorite Donald Trump Tweets" (based on the number of retweets?), i.e. 448 tweets posted by the Twitter account @realDonaldTrump between August 1st, 2015 and August 16th, 2016, and that were used in the FiveThirtyEight article ["The World's Favorite Donald Trump Tweets"](https://fivethirtyeight.com/features/the-worlds-favorite-donald-trump-tweets/) (06/21/2016).
 
 (Manually create a small table for your dataframe with two columns: variable name and variable description. Include a few variables in the table.)
+```{r echo=FALSE}
+library(fivethirtyeight)
+data(package = "fivethirtyeight")
+```
 ```{r}
 variables <- data.frame(c("id", "created_at", "text"),c("unique identifier", "date created", "contents of the tweet"))
 names(variables) <- c("name", "description")
@@ -85,4 +89,4 @@ axis(side=1, at=c(0:2))
 
 ### 6. Add a picture
 
-![Quite an emphatic bird](QMSS-G5072-Modern-Data-Structures/Exercises/hw01/images/220px-Twitter_bird_logo_2012.svg.png/220px-Twitter_bird_logo_2012.svg.png "Quite an emphatic bird")
+![Quite an emphatic bird](/Users/Anouch/Downloads/220px-Twitter_bird_logo_2012.svg.png "Quite an emphatic bird")

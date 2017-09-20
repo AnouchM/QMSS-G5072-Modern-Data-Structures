@@ -193,11 +193,15 @@ Lecture Topics
         
 > **Homework 1**: [Using RMarkdown and Github](Exercises/hw01/hw01.md). Also see the [homework submission instructions](Exercises/homework_submission_instructions.md).
 
-#### Week 3: (Sep 20) Basics of the tidyverse
+#### [Week 3: (Sep 20) Basics of the tidyverse](Lectures/Week03/week03_lecture.md)
 
 -   **On your own:** Install `tidyverse` package.
 -   **Reading**:
     -   [Why R is Hard to Learn](http://r4stats.com/articles/why-r-is-hard-to-learn/), by Robert A. Muenchen
+    - Wickham, H., & Grolemund, G. (2017). [R for Data Science](http://r4ds.had.co.nz/). Chapters 9-12
+- **Advanced Topics (optional, on your own only)**:
+    - Interested in text as data? Take a look at 
+      Silge, J., & Robinson, D. (2017). [Text Mining with R: A Tidy Approach.](http://tidytextmining.com/) O’Reilly Media.
 
 #### Week 4: (Sep 27) Functions I: the basic logic and simple steps
 

@@ -10,22 +10,22 @@ always_allow_html: yes
 bibliography:
   - references.bib
   
+
 output:
   ioslides_presentation:
     incremental: false
     smaller: false
     css:  "../custom.css"
-    theme: default 
-  github_document:
-    toc: true
-    toc_depth: 1
+    theme: default
+    keep_md: TRUE  
+  github_document: default
+
+  
 ---
 
 ```{r packages, message = FALSE, warning = FALSE, echo=FALSE}
-whereamI <- "/Users/tbrambor/Dropbox (Pflegedienst Brambor)/Courses/Current/2017 Fall QMSS Modern Data Structures/Lectures/Week 03 Tidyverse/"
-
 # Load packages.
-packages <- c("remedy","citr","tidyverse","reprex","addinexamples","shinyjs")
+packages <- c("tidyverse","reprex","addinexamples","devtools")
 
 packages <- lapply(packages, FUN = function(x) {
   if(!require(x, character.only = TRUE)) {
@@ -35,6 +35,8 @@ packages <- lapply(packages, FUN = function(x) {
 }
 )
 
+devtools::install_github("ThinkR-open/remedy")
+devtools::install_github("crsh/citr")
 ```
 
 
@@ -75,10 +77,7 @@ knitr::opts_template$set("kill_prefix"=list(comment=NA, null_prefix=TRUE))
 ## Normal Setup From Here
 library(knitr)
 
-knitr::opts_knit$set(root.dir = whereamI)
-
-opts_chunk$set(root.dir = whereamI,
-               fig.path="images/",
+opts_chunk$set(fig.path="images/",
                cache.path="cache/",
             #   dev=c("png","pdf"),
             #  fig.width=5,
@@ -909,5 +908,6 @@ knitr::include_graphics("images/data-wrangling-cheatsheet_p1.png")
 ```{r out.width = "90%", echo = FALSE}
 knitr::include_graphics("images/data-wrangling-cheatsheet_p2.png")
 ```
+
 
 
